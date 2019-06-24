@@ -14,5 +14,6 @@ class Dog
 
   def self.all
     puts all.join(" ")
+  end
 
 end
