@@ -3,6 +3,7 @@ class Dog
 
   @@all=[]
 
+
   def initialize(name)
     @name=name
     @@all<<self
@@ -13,7 +14,9 @@ class Dog
   end
 
   def self.all
-    puts @@all.join(" ")
+    names=[]
+    @@all.each {|dog| names<<dog.name}
+    puts names.join(" ")
   end
 
 end
