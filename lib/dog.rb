@@ -16,7 +16,7 @@ class Dog
   def self.all
     names=[]
     @@all.each {|dog| names<<dog.name}
-    puts names.join(" ")
+    puts names.join("\n")
   end
 
 end
